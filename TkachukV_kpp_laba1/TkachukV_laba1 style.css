@@ -1,0 +1,117 @@
+/* 1. СКИДАННЯ СТИЛІВ (RESET) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Щоб відступи не збільшували розмір блоків */
+}
+ 
+/* Загальні налаштування для всієї сторінки */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #373737; /* Темно-сірий колір тексту */
+}
+ 
+/* 2. ШАПКА САЙТУ */
+.header {
+	padding: 30px 0;
+	display: flex;
+	justify-content: center; /* Вирівнюємо меню по центру */
+	align-items: center;
+    background-color: #ffffff;
+}
+ 
+/* Робимо меню в один рядок за допомогою Flexbox */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Центруємо по горизонталі */
+    gap: 50px; /* Відстань між пунктами меню */
+}
+ 
+/* Стилі для тексту в шапці */
+.nav a {
+    text-decoration: none; /* Прибирає підкреслення під текстом */
+    color: #16a085; /* Бірюзовий колір */
+    font-weight: 700; /* Робимо текст жирним */
+    font-size: 16px; /* Розмір шрифту */
+    letter-spacing: 2px; /* Трохи розсуваємо літери для стилю */
+    transition: color 0.3s; /* Плавна зміна кольору при наведенні */
+}
+ 
+/* Ефект при наведенні мишки на меню */
+.nav a:hover {
+    color: #117a65; /* Трохи темніший бірюзовий */
+}
+ 
+/* 3. КАРТИНКА */
+.hero {
+	width: 100%;
+}
+.hero img {
+    width: 100%; /* Картинка розтягується на всю ширину екрану */
+    height: 560px; /* Висота картинки */
+    object-fit: cover; /* Картинка заповнює блок, не деформуючись */
+    display: block; /* Прибирає порожнє місце знизу картинки */
+}
+ 
+/* 4. ОСНОВНИЙ ТЕКСТ */
+.content {
+	width: 100%;
+	background-color: #f6f7f5;
+	padding: 55px 20px;
+}
+.content-wrapper {
+    max-width: 820px; /* Обмежуємо ширину тексту, щоб він не розтягувався на весь екран */
+    margin: 0 auto; /* Центруємо цей блок на сторінці */
+	text-align: center; /* Весь текст по центру */
+}
+/* Стилі для заголовка */
+.content h1 {
+	font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 40px; /* Відступ від заголовка до першого абзацу */
+    color: #373737;
+}
+ 
+/* Стилі для абзаців тексту */
+.content p {
+    font-size: 18px;
+    line-height: 1.8; /* Відстань між рядками */
+    margin-bottom: 25px; /* Відступ між абзацами */
+    color: #555555;
+	text-align: justify;
+	text-align-last: center;
+}
+/* 5. КНОПКА */
+.btn {
+    background-color: #16a085;
+    color: #ffffff;
+    padding: 16px 45px; /* Внутрішні відступи кнопки */
+    border: none; /* Прибирає рамку */
+    border-radius: 4px; /* Трохи закруглені кути */
+	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer; /* Курсор стає "рукою" при наведенні */
+    margin-top: 30px;
+    transition: background-color 0.3s; /* Плавна зміна кольору */
+}
+ 
+.btn:hover {
+    background-color: #117a65; /* Колір кнопки стає темнішим при наведенні */
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+ 
+/* 6. ФУТЕР */
+.footer {
+    background-color: #ffffff;
+	text-align: right;
+    padding: 30px 50px; /* Відступи */
+}
+ 
+.footer p {
+    font-size: 15px;
+    font-weight: 700;
+    color: #373737;
+}
